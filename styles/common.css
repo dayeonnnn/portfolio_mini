@@ -1,0 +1,35 @@
+/* header, footer */
+header {}
+header nav {}
+header nav a {
+    font-family: 'Playfair Display', serif;
+}
+header #open_nav {}
+header #open_nav .sub {}
+header #open_nav .sub1 {}
+header #open_nav .sub2 {}
+header #open_nav .sub3 {}
+header h1 {
+    width: 90px; height: 40px;
+    background-color: gray;
+}
+header h1 img {width: 100%;}
+header .header_r {}
+header .header_r form {}
+header .header_r form fieldset {
+    background: pink;
+    opacity: 0.6;
+    width: 250px; height: 30px;
+    padding: 10px;
+}
+header .header_r form fieldset #search {}
+header .header_r form fieldset #search::placeholder {color:#aaa;}
+header .header_r form fieldset #searchBtn {
+    background-color: aqua;
+    width: 23px; height: 23px;
+}
+header .header_r form fieldset #searchBtn img {width: 100%;}
+header .header_r a {
+    width: 30px; height: 30px;
+}
+header .header_r a img {width: 100%;}
