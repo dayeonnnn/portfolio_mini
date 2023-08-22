@@ -6,6 +6,8 @@
     <meta name="keywords" content="미니, MINI, 자동차">
     <meta name="description" content="MINI 공식 사이트입니다.">
     <title>MINI</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <!-- 파비콘 -->
     <!--     <link rel="shortcut icon" href="" type="image/x-icon">
     <link rel="icon" href="" type="image/x-icon"> -->
@@ -18,49 +20,149 @@
     <!-- <?php include('./header.php') ?> -->
     <header>
         <nav>
-            <a href="#">Model</a>
-            <a href="#">Shop</a>
-            <a href="#">News</a>
-            <a href="#">Store</a>
+            <ul class="gnb">
+                <li><a href="#">Model</a>
+                    <ul class="sub">
+                        <li><a href="#">Electiric</a></li>
+                        <li><a href="#">3-Door Hatch</a></li>
+                        <li><a href="#">5-Door Hatch</a></li>
+                        <li><a href="#">Convertible</a></li>
+                        <li><a href="#">Clubman</a></li>
+                        <li><a href="#">Countryman</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Shop</a>
+                    <ul class="sub">
+                        <li><a href="#">MINI 전시장</a></li>
+                        <li><a href="#">MINI Shop online</a></li>
+                        <li><a href="#">MINI 시승 신청</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a>
+                    <ul class="sub">
+                        <li><a href="#">뉴스레터</a></li>
+                        <li><a href="#">프로모션</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Store</a>
+                    <ul class="sub">
+                        <li><a href="#">매장찾기</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav_bg"></div>
         </nav>
-        <!-- sub 메뉴 -->
-        <div id="open_nav">
-            <div class="sub sub1">
-                <a href="#">Electiric</a>
-                <a href="#">3-Door Hatch</a>
-                <a href="#">5-Door Hatch</a>
-                <a href="#">Convertible</a>
-                <a href="#">Clubman</a>
-                <a href="#">Countryman</a>
-            </div>
-            <div class="sub sub2">
-                <a href="#">MINI 전시장</a>
-                <a href="#">MINI Shop online</a>
-                <a href="#">MINI 시승 신청</a>
-            </div>
-            <div class="sub sub3">
-                <a href="#">뉴스레터</a>
-                <a href="#">프로모션</a>
-            </div>
-        </div>
-        <!-- sub 끝 -->
-        <h1><img src="#" alt="MINI"></h1>
+        <h1><img src="./images/mini_logo_w.png" alt="MINI"></h1>
         <div class="header_r">
             <form action="#" method="post" id="search_frm">
                 <fieldset>
                     <legend class="skip">검색양식</legend>
                     <input type="search" name="search" id="search" placeholder="찾으시는 차량을 검색하세요.">
-                    <button type="submit" id="searchBtn"><img src="#" alt="검색버튼"></button>
+                    <button type="submit" id="searchBtn"><img src="./images/search.png" alt="검색버튼"></button>
                 </fieldset>
             </form>
-            <a href="#"><img src="#" alt="login"></a>
+            <a href="#"><img src="./images/login.png" alt="login"></a>
         </div>
     </header>
     <main>
-        <div class="main_bg"></div>
+        <section class="visual">
+            <video src="./video/main.mp4" autoplay loop muted></video>
+            <div class="video_bg"></div>
+            <div class="btm">
+                <div class="txt">
+                    <h1>MINI</h1>
+                    <p>Creative solutions<br>for a brighter urban life</p>
+                </div>
+                <div class="visual_btn">
+                    <a href="#">자세히 보러가기</a>
+                    <a href="#">Shop online</a>
+                </div>
+            </div>
+        </section>
+        <section class="model">
+            <h2>Model</h2>
+            <div class="swiper" id="model_slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <div class="bg_1"></div>
+                        <p class="txt">3-DOOR HATCH</p>
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <div class="bg_2"></div>
+                        <p class="txt">5-Door Hatch</p>
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <div class="bg_3"></div>
+                        <p class="txt">Convertible</p>
+                    </div>
+                    <div class="swiper-slide slide4">
+                        <div class="bg_4"></div>
+                        <p class="txt">Clubman</p>
+                    </div>
+                    <div class="swiper-slide slide5">
+                        <div class="bg_5"></div>
+                        <p class="txt">Countryman</p>
+                    </div>
+                    <div class="swiper-slide slide6">
+                        <div class="bg_6"></div>
+                        <p class="txt">Electiric</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bnr">
+            <a href="#"><img src="./images/bnr.jpg" alt="시승하기"></a>
+            <div class="txt">
+                <p class="logo"><img src="./images/mini_logo_w.png" alt=""></p>
+                <h2>시승 상담 신청하기</h2>
+                <p><span>고객님께서 원하시는 MINI 차량을 시승을 통해 먼저 경험해보세요.</span></p>
+            </div>
+        </section>
+        <section class="mini">
+            <h2>MINI</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="./images/mini_1.jpg" alt="MINI" class="play1_bg">
+                        <p>MINI가 추천하는<br>국내 숨은 힐링 여행지<br>소멸위험지역을 지키는 BIG LOVE.</p>
+                        <img src="./images/play_circle.png" alt="play" class="play">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/mini_2.jpg" alt="Big love" class="play2_bg">
+                        <p>MINI.<br>세상을 사랑하자.<br>BIG LOVE.</p>
+                        <img src="./images/play_circle.png" alt="play" class="play">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/mini_3.jpg" alt="ELECTRIC" class="play3_bg">
+                        <p>THE NEW MINI<br>ELECTRIC.</p>
+                        <img src="./images/play_circle.png" alt="play" class="play">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./images/mini_4.jpg" alt="최자로드7" class="play4_bg">
+                        <p>MINI x 최자로드7 티저 공개<br>진짜 미식의 섬<br>JEJU CALLING</p>
+                        <img src="./images/play_circle.png" alt="play" class="play">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section class="welcome">
+            <h2>WELCOME TO MINI.</h2>
+            <p>나에게 가까운 MINI 매장을 찾고 경험해보세요.</p>
+            <a href="#">
+                <span>매장 위치 찾기</span>
+                <img src="./images/right.png" alt="">
+            </a>
+        </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./script/common.js"></script>
 </body>
 </html>

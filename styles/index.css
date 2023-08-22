@@ -1,1 +1,117 @@
 /* main */
+main {}
+main .visual {
+    position:relative;
+    overflow: hidden;
+    height: 100vh;
+    }
+main .visual .btm {
+    width: calc(100% - 100px); margin: 0 auto;
+    position: absolute; left:50px; bottom: 50px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 3;
+}
+main .visual .btm .txt {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+}
+main .visual .btm .txt h1 {
+    font-size: 5rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color:#fff;
+    margin-bottom: 30px;
+}
+main .visual .btm .txt p {
+    font-size: 2.441rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color:#fff;
+    line-height:52px;
+}
+main .visual .btm .visual_btn {margin-bottom: 30px;}
+main .visual .btm .visual_btn a {
+    padding: 15px 10px;
+    border:1px solid #fff;
+    color: #fff;
+}
+main .visual .btm .visual_btn a:hover {
+    background: #fff;
+    color:#000
+}
+main .visual .btm .visual_btn a:first-child {margin-right: 20px;}
+main .visual video {
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+main .visual .video_bg {
+    height: 100vh; width: 100%;
+    position: absolute;
+    z-index: 2;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 32%, rgba(0,0,0,0) 81%, rgba(0,0,0,0.4) 100%);
+}
+main .model {
+    padding: 0 50px;
+}
+main .model h2,main .mini h2 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.4375rem;
+    margin: 100px 0 50px;
+}
+/* 슬라이더 추가하기 */
+main .bnr {
+    height: 300px; width: 100%;
+    overflow: hidden;
+    position: relative;
+    opacity: 0.8;
+}
+main .bnr:hover {opacity: 1;}
+main .bnr a {}
+main .bnr a img {
+    width: 100%;
+}
+main .bnr .txt {
+    padding: 49px 50px 0 0;
+    position: absolute; top:0; right: 0;
+    display: flex; flex-flow: column nowrap;
+    align-items: flex-end;
+}
+main .bnr .txt .logo {
+    width: 112px;
+}
+main .bnr .txt .logo img {width: 100%;}
+main .bnr .txt h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 800;
+    font-size: 3.125rem;
+    color: #fff;
+    margin: 70px 0 30px;
+}
+main .bnr .txt p {}
+main .bnr .txt p span {
+    color: #fff;
+}
+main .mini {}
+main .mini h2 {}
+main .mini ul {}
+main .mini ul li {}
+main .mini ul li a {}
+main .mini ul li a img {}
+main .mini ul li a .play1_bg {}
+main .mini ul li a .play2_bg {}
+main .mini ul li a .play3_bg {}
+main .mini ul li a .play4_bg {}
+main .mini ul li a p {}
+main .mini ul li a .play {}
+main .welcome {}
+main .welcome h2 {}
+main .welcome p {}
+main .welcome a {}
+main .welcome a span {}
+main .welcome a img {}

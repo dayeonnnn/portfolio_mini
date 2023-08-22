@@ -1,35 +1,86 @@
 /* header, footer */
-header {}
-header nav {}
-header nav a {
-    font-family: 'Playfair Display', serif;
+header {
+    width: 100%;
+    margin:0 auto;
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 999;
+    position: fixed;
+    background: rgba(0,0,0,0.2);
 }
-header #open_nav {}
-header #open_nav .sub {}
-header #open_nav .sub1 {}
-header #open_nav .sub2 {}
-header #open_nav .sub3 {}
+header nav {}
+header nav .gnb {
+    display: flex;
+    z-index: 998;
+}
+header nav .gnb > li {
+    position: relative;
+}
+header nav .gnb > li > a {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color:#fff;
+    margin-right: 50px;
+    width: 100px;
+    display: block;
+    line-height: 100px;
+}
+header nav .gnb > li > .sub {
+    position: absolute; top:100px;
+    width: 100%;
+    height: 300px;
+    /* background:#fff ; */
+    z-index: 990;
+}
+header nav .gnb > li > .sub li {
+    padding-left: 10px;
+    opacity: 0.8;
+}
+header nav .gnb > li > .sub li a:hover {opacity: 1; font-weight: 500;}
+header nav .gnb > li > .sub li a {
+    font-size: 1rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    display: block;
+    line-height: 40px;
+    color: #000;
+}
+header nav .nav_bg {
+    background: rgba(255,255,255,0.6);
+    height: 300px; width: calc(100% - 100px);
+    position: absolute;  top:100px;
+    z-index: 600;
+}
 header h1 {
     width: 90px; height: 40px;
-    background-color: gray;
+    position: absolute; left:50%;
+    transform: translateX(-50%);
 }
 header h1 img {width: 100%;}
-header .header_r {}
-header .header_r form {}
-header .header_r form fieldset {
-    background: pink;
-    opacity: 0.6;
-    width: 250px; height: 30px;
-    padding: 10px;
+header .header_r {
+    display: flex;
+    align-items: center;
+    position: absolute; right: 0;
 }
-header .header_r form fieldset #search {}
-header .header_r form fieldset #search::placeholder {color:#aaa;}
-header .header_r form fieldset #searchBtn {
-    background-color: aqua;
-    width: 23px; height: 23px;
+header .header_r #search_frm {margin-right: 20px;}
+header .header_r #search_frm fieldset {
+    background: rgba(255,255,255,0.6);
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
-header .header_r form fieldset #searchBtn img {width: 100%;}
-header .header_r a {
-    width: 30px; height: 30px;
+header .header_r #search_frm fieldset #search {background: none;}
+header .header_r #search_frm fieldset #search::placeholder {color:#000000;}
+header .header_r #search_frm fieldset #searchBtn {
+    background: none;
 }
-header .header_r a img {width: 100%;}
+header .header_r #search_frm fieldset #searchBtn img {}
+header .header_r > a {margin-right: 50px;}
+header .header_r > a img {}
