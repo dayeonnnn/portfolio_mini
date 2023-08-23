@@ -8,3 +8,11 @@
         height: 300px;
     }
 }
+@media screen and (max-width:1300px){
+    header nav .m_nav {
+        display: block;
+    }
+    header nav .gnb {
+        display: none;
+    }
+}

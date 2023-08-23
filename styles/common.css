@@ -76,11 +76,73 @@ header .header_r #search_frm fieldset {
     justify-content: space-between;
     align-items: center;
 }
-header .header_r #search_frm fieldset #search {background: none;}
-header .header_r #search_frm fieldset #search::placeholder {color:#000000;}
+header .header_r #search_frm fieldset #search {
+    background: none;
+}
+header .header_r #search_frm fieldset #search::placeholder {
+    color:#000;
+    font-size: 0.8rem;
+    position: relative; top:-1px;
+}
 header .header_r #search_frm fieldset #searchBtn {
     background: none;
 }
 header .header_r #search_frm fieldset #searchBtn img {}
 header .header_r > a {margin-right: 50px;}
 header .header_r > a img {}
+/* 햄버거 메뉴 */
+header nav .m_nav {
+    display: none;
+    position: absolute; top:40px;
+}
+header nav .m_nav span {
+    display: block;
+    background: #fff;
+    width: 30px; height:3px;
+    margin-bottom: 7px;
+    border-radius: 10px;
+}
+/* 햄버거 메뉴 오픈 */
+header nav .m_nav_open {
+    display: none;
+    width: 400px; height: 100vh;
+    background:rgba(0,0,0,0.5);
+    position: absolute; top: 100px;
+    z-index: 40;
+}
+header nav .m_nav_open .close {
+    position: absolute; top:10px; right: 10px;
+    z-index: 50;
+}
+header nav .m_nav_open .close img {}
+header nav .m_nav_open ul {}
+header nav .m_nav_open > ul > li {
+    position: relative;
+    margin-bottom: 20px;
+}
+header nav .m_nav_open ul li:hover .m_nav_open > ul > li > a {}
+header nav .m_nav_open > ul > li > a {
+    display: block;
+    background: rgba(255,255,255,0.4);
+}
+/* header nav .m_nav_open ul li a:hover {background: #fff;} */
+/* header nav .m_nav_open ul li:hover ul li a {color:#000} */
+header nav .m_nav_open ul li a {}
+header nav .m_nav_open ul li a span {
+    display: inline-block;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color:#fff;
+    padding:20px 30px;
+}
+header nav .m_nav_open ul li a img {
+    position: absolute; top:18px; left:100px;
+}
+header nav .m_nav_open ul li ul {}
+header nav .m_nav_open ul li ul li {}
+header nav .m_nav_open ul li ul li a {
+    font-size: 0.8rem;
+    color:#fff;
+    display: inline-block;
+    padding: 10px 30px;
+}
