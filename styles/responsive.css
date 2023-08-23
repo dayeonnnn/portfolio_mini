@@ -1,6 +1,10 @@
 /* 반응형웹 */
-@media screen and (max-width:2000px){
+@media screen and (max-width:1650px){
     main .visual video {
-        width: 100%;
+        width: auto;
+        height: 100%;
+    }
+    .bnr {
+        height: 300px;
     }
 }
