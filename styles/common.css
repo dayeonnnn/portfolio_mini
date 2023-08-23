@@ -103,8 +103,9 @@ header nav .m_nav span {
     border-radius: 10px;
 }
 /* 햄버거 메뉴 오픈 */
+header nav .showHide {display:none;}
 header nav .m_nav_open {
-    display: none;
+    /* display: none; */
     width: 400px; height: 100vh;
     background:rgba(0,0,0,0.5);
     position: absolute; top: 100px;

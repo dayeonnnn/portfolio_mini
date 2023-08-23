@@ -19,11 +19,6 @@ for(let i of nav){
 }
 const m_nav = document.querySelector('.m_nav')
 const m_nav_open = document.querySelector('.m_nav_open')
-const close = document.querySelector('.m_nav_open .close')
-console.log(close)
 m_nav.addEventListener('click',function(){
-    m_nav_open.style.display='block'
-})
-close.addEventListener('click',function(){
-    m_nav_open.style.display='none'
+m_nav_open.classList.toggle('showHide')
 })

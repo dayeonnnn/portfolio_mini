@@ -69,4 +69,3 @@ mini.forEach(function(target,index,array){
         play[index].style.display = 'none'
     })
 })
-/* model 슬라이드 */
