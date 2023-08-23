@@ -31,8 +31,9 @@ const model_slide = new Swiper('#model_slide',{
         }
     },
     breakpoints:{
-        700:{slidesPerView:2, centeredSlides:false,},
-        1000:{slidesPerView:3, centeredSlides:true,},
+        0:{slidesPerView:1, centeredSlides:false,},
+        900:{slidesPerView:2, centeredSlides:false,},
+        1500:{slidesPerView:3, centeredSlides:true,},
     }
 });
 const mini_slide = new Swiper('#mini_slide',{
@@ -68,3 +69,4 @@ mini.forEach(function(target,index,array){
         play[index].style.display = 'none'
     })
 })
+/* model 슬라이드 */

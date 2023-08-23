@@ -32,6 +32,7 @@ main .visual .btm .txt p {
 }
 main .visual .btm .visual_btn {margin-bottom: 30px;}
 main .visual .btm .visual_btn a {
+    display: inline-block;
     padding: 15px 10px;
     border:1px solid #fff;
     color: #fff;
@@ -67,17 +68,14 @@ main .model h2,main .mini h2 {
 }
 main .model #model_slide {}
 main .model #model_slide .swiper-wrapper {}
-main .model #model_slide .swiper-wrapper .swiper-slide {width: 500px; height: 300px; background-color:aqua}
+main .model #model_slide .swiper-wrapper .swiper-slide {width: 500px; height: 300px;}
 main .model #model_slide .swiper-wrapper .swiper-slide .txt {
-    position: absolute; bottom: 30px; left:50%; transform: translateX(-50%);
+    position: absolute; bottom: 7%; left:50%; transform: translateX(-50%);
     opacity: 0;
     transition: 1s all;
 }
 main .model #model_slide .swiper-wrapper .slide1 {
     background: url(../images/car_1.png) no-repeat;
-    background-size: 60%;
-    background-position: center;
-
 }
 main .model #model_slide .swiper-wrapper .slide2 {
     background: url(../images/car_2.png) no-repeat;
@@ -120,7 +118,7 @@ main .model #model_slide .swiper-wrapper .swiper-scrollbar {
 }
 main .bnr {
     background: url(../images/bnr.jpg) no-repeat;
-    background-size: 100% auto;
+    background-size: cover;
     height: 300px; width: 100%;
     overflow: hidden;
     position: relative;
@@ -130,7 +128,6 @@ main .bnr {
 }
 main .bnr:hover {
     opacity: 1;
-    background-size: 102% auto;
 }
 main .bnr .txt {
     height: 300px; width: 100%;
@@ -252,28 +249,32 @@ main .welcome a img {
 }
 footer {
     margin:100px 50px;
-    overflow: hidden;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
 }
-footer h1 {width: 200px; float:left; margin-right: 150px;}
-footer h1 img {width: 100%;}
-footer .footer_menu {float:left;}
-footer .footer_menu ul {
-    display: flex;
+footer .left {display: flex;}
+footer .left h1 {width: 200px; margin-right: 150px;}
+footer .left h1 img {width: 100%;}
+footer .left .footer_menu {}
+footer .left .footer_menu ul {
+    display: flex; flex-flow: row nowrap;
     margin-bottom: 26px;
 }
-footer .footer_menu ul li {}
-footer .footer_menu ul li::after {
+footer .left .footer_menu ul li {}
+footer .left .footer_menu ul li::after {
     content: '';
     display: inline-block;
     background-color: #000;
     width: 1px; height: 14px;
     margin:0 20px;
 }
-footer .footer_menu ul li span {font-weight: 700;}
-footer .footer_menu address {
+footer .left .footer_menu ul li span {font-weight: 700;}
+footer .left .footer_menu address {
     line-height: 30px;
 }
-footer .sns {float:right;}
+footer .sns {
+    text-align: right;
+}
 footer .sns a {width: 40px;}
 footer .sns a:nth-child(2) {margin:0 50px;}
 footer .sns a img {}
