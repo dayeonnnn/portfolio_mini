@@ -5,6 +5,16 @@
         height: 100%;
     }
 }
+@media screen and (max-width:1500px){
+    .make .make_btm {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    .make .make_btm .make_car {
+        margin-top: 100px;
+    }
+}
 @media screen and (max-width:1330px){
     header nav .m_nav {
         display: block;
@@ -25,6 +35,7 @@
     }
     footer .left {display: flex; flex-flow: column nowrap; align-items: center;}
     footer .left h1 {width: 150px; transform: translateX(50%); margin-bottom: 50px;}
+    .deg .deg_360 a .bg {height: 700px;}
 }
 @media screen and (max-width:1000px){
     header .header_r #search_frm {
@@ -38,10 +49,21 @@
         margin-bottom: 20px;
     }
 }
+@media screen and (max-width:900px){
+    .make .make_car {
+        margin: 0 auto;
+        
+    }
+    .make .make_car img {
+        width:600px;
+    }
+}
 @media screen and (max-width:750px){
     footer .left .footer_menu ul {
         display: flex; flex-flow: column nowrap;
     }
     footer .left .footer_menu ul li {margin-bottom: 10px;}
     footer .left .footer_menu ul li::after {display: none;}
+    .deg .deg_360 a .bg {height: 500px;}
+    .deg .deg_360 a .icon {width: 100px;}
 }
