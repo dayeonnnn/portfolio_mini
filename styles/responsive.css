@@ -1,4 +1,7 @@
 /* 반응형웹 */
+@media screen and (min-width:1330px){
+    .m_nav_open {display: none;}
+}
 @media screen and (max-width:1650px){
     main .visual video {
         width: auto;
@@ -48,15 +51,31 @@
     main .visual .btm .txt {
         margin-bottom: 20px;
     }
+    main .contents .list {
+        display: flex; flex-flow: column nowrap;
+    }
+    main .contents .list a {margin-bottom: 20px;}
+    main .contents .list a::after {display: none;}
+    main #map, main .infor {
+        width: 800px;
+    }
 }
 @media screen and (max-width:900px){
     .make .make_car {
-        margin: 0 auto;
-        
     }
     .make .make_car img {
-        width:600px;
+        width:500px;
     }
+}
+@media screen and (max-width:800px){
+    main #map {
+        width: 400px;
+        height: 300px;
+    }
+    main .infor {
+        width: 400px;
+    }
+
 }
 @media screen and (max-width:750px){
     footer .left .footer_menu ul {

@@ -108,7 +108,7 @@ header nav .m_nav_open {
     /* display: none; */
     width: 400px; height: 100vh;
     background:rgba(0,0,0,0.5);
-    position: absolute; top: 100px;
+    position: absolute; top: 100px; left:0;/* 메뉴 왼쪽으로 붙이기 */
     z-index: 40;
 }
 header nav .m_nav_open ul {}
@@ -121,8 +121,6 @@ header nav .m_nav_open > ul > li > a {
     display: block;
     background: rgba(255,255,255,0.4);
 }
-/* header nav .m_nav_open ul li a:hover {background: #fff;} */
-/* header nav .m_nav_open ul li:hover ul li a {color:#000} */
 header nav .m_nav_open ul li a {}
 header nav .m_nav_open ul li a span {
     display: inline-block;

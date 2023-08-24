@@ -1,0 +1,66 @@
+main {
+    /* margin: 0 auto; */
+    padding-top: 100px;
+    display: flex; flex-flow: column nowrap;
+    align-items: center;
+}
+main h2 {
+    font-size: 1.953rem;
+    font-weight: 700;
+    margin-top: 100px;
+}
+main .list {
+    margin: 50px 0 40px;
+}
+main .list .active {
+    color:#000;
+    font-weight: 500;
+}
+main .list a {
+    font-size: 1.25rem;
+    color:#aaa;
+}
+main .list a::after {
+    content: '';
+    display: inline-block;
+    width: 2px; height: 17px;
+    background-color: #aaa;
+    position: relative; top: 1px;
+    margin:0 20px;
+}
+main .list a:last-child::after {display: none;}
+main #map {
+    background-color:#aaa;
+    width: 1000px; height: 500px;
+
+}
+main .infor {
+    margin-top: 50px;
+}
+main .infor p {
+    margin-bottom: 20px;
+}
+main .infor p span {
+    font-size: 1.25rem;
+    line-height: 29px;
+}
+main .infor p img {
+    width: 18px; height: 18px;
+    margin-right: 10px;
+}
+main .infor .location {}
+main .infor .location img {}
+main .infor .location span {}
+main .infor .number {}
+main .infor .number img {}
+main .infor .number img span {}
+main .infor .content {
+    display: flex;
+}
+main .infor .content img {position: relative; top:7px;}
+main .infor .content span {
+    display: inline-block;
+}
+main .contents .in1 {}
+/* main .contents .in2 {display: none;}
+main .contents .in3 {display: none;} */
