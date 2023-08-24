@@ -17,9 +17,43 @@
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="icon" href="./images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./styles/reset.css">
-    <link rel="stylesheet" href="./styles/index.css">
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
     <link rel="stylesheet" href="./styles/common.css">
+    <!-- <link rel="stylesheet" href="./styles/shop_map.css"> -->
     <link rel="stylesheet" href="./styles/responsive.css">
+    <style>
+        main {
+            position: relative; top:100px;
+            padding: 100px 0 0 50px;
+        }
+        main h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 100px;
+        }
+        main .app {
+            display: flex;
+            justify-content: center;
+        }
+        main .app a {
+            display: flex; flex-flow: column nowrap;
+            text-align: center;
+            margin-bottom: 200px;
+        }
+        main .app a:hover span {
+            font-weight: 700;
+        }
+        main .app a:first-child {margin-right: 100px;}
+        main .app a img {
+            border-radius: 22px;
+            box-shadow: 0 0 4px rgba(0,0,0,0.5);
+            margin-bottom: 30px;
+        }
+        main .app a span {
+            line-height: 29px;
+        }
+    </style>
 </head>
 <body>
     <!-- <?php include('./header.php') ?> -->
@@ -104,103 +138,11 @@
         </div>
     </header>
     <main>
-        <section class="visual">
-            <video src="./video/main.mp4" autoplay loop muted></video>
-            <div class="video_bg"></div>
-            <div class="btm">
-                <div class="txt">
-                    <h1>MINI</h1>
-                    <p>Creative solutions<br>for a brighter urban life</p>
-                </div>
-                <div class="visual_btn">
-                    <a href="#">자세히 보러가기</a>
-                    <a href="#">Shop online</a>
-                </div>
-            </div>
-        </section>
-        <section class="model">
-            <h2>Model</h2>
-            <div class="swiper" id="model_slide">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">
-                        <p class="txt">3-DOOR HATCH</p>
-                    </div>
-                    <div class="swiper-slide slide2">
-                        <div class="car bg_2"></div>
-                        <p class="txt">5-Door Hatch</p>
-                    </div>
-                    <div class="swiper-slide slide3">
-                        <div class="car bg_3"></div>
-                        <p class="txt">Convertible</p>
-                    </div>
-                    <div class="swiper-slide slide4">
-                        <div class="car bg_4"></div>
-                        <p class="txt">Clubman</p>
-                    </div>
-                    <div class="swiper-slide slide5">
-                        <div class="car bg_5"></div>
-                        <p class="txt">Countryman</p>
-                    </div>
-                    <div class="swiper-slide slide6">
-                        <div class="car bg_6"></div>
-                        <p class="txt">Electiric</p>
-                    </div>
-                </div>
-                <div class="swiper-scrollbar"></div>
-            </div>
-        </section>
-        <section class="mini">
-            <h2>MINI</h2>
-            <div class="swiper" id="mini_slide">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide1">
-                        <a href="#">
-                            <p class="txt">MINI가 추천하는<br>국내 숨은 힐링 여행지<br>위험지역을 지키는 BIG LOVE.</p>
-                            <p><img src="./images/play_circle.png" alt="play" class="play"></p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide slide2">
-                        <a href="#">
-                            <p class="txt">MINI.<br>세상을 사랑하자.<br>BIG LOVE.</p>
-                            <p><img src="./images/play_circle.png" alt="play" class="play"></p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide slide3">
-                        <a href="#">
-                            <p class="txt">THE<br>NEW MINI<br>ELECTRIC.</p>
-                            <p><img src="./images/play_circle.png" alt="play" class="play"></p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide slide4">
-                        <a href="#">
-                            <p class="txt">MINI x 최자로드7 티저 공개<br>진짜 미식의 섬<br>JEJU CALLING</p>
-                            <p><img src="./images/play_circle.png" alt="play" class="play"></p>
-                        </a>
-                    </div>
-                    <div class="swiper-slide slide5">
-                        <a href="#">
-                            <p class="txt">2022 MINI<br>PUPPYLAND VIP PAWTY<br>클로징 이벤트 현장 스케치</p>
-                            <p><img src="./images/play_circle.png" alt="play" class="play"></p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="bnr">
-            <a href="#" class="txt">
-                <p class="logo"><img src="./images/mini_logo_w.png" alt=""></p>
-                <h2>시승 상담 신청하기</h2>
-                <p><span>고객님께서 원하시는 MINI 차량을 시승을 통해 먼저 경험해보세요.</span></p>
-            </a>
-        </section>
-        <section class="welcome">
-            <h2>WELCOME TO MINI.</h2>
-            <p>나에게 가까운 MINI 매장을 찾고 경험해보세요.</p>
-            <a href="#">
-                <span>매장 위치 찾기</span>
-                <img src="./images/right.png" alt="">
-            </a>
-        </section>
+        <h2>MINI Shop online</h2>
+        <div class="app">
+            <a href="#"><img src="./images/google play.png" alt="google play"><span>Google Play<br>설치하기</span></a>
+            <a href="#"><img src="./images/App store.png" alt="app store"><span>App store<br>설치하기</span></a>
+        </div>
     </main>
     <footer>
         <div class="left">
@@ -227,6 +169,6 @@
         </div>
     </footer>
     <script src="./script/common.js"></script>
-    <script src="./script/index.js"></script>
+    <!-- <script src="./script/index.js"></script> -->
 </body>
 </html>
