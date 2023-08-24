@@ -19,8 +19,51 @@
     <link rel="stylesheet" href="./styles/reset.css">
     <!-- <link rel="stylesheet" href="./styles/index.css"> -->
     <link rel="stylesheet" href="./styles/common.css">
-    <link rel="stylesheet" href="./styles/shop_map.css">
+    <!-- <link rel="stylesheet" href="./styles/shop_map.css"> -->
     <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        @media screen and (max-width:1000px){
+            main {
+                height: 1000px;
+                background-position: left 20%;
+            }
+        }
+        main {
+            background-image:url(./images/testdrive.jpg);
+        }
+        main .test_drive {
+            height: 1797px;
+            position: relative; top:100px;
+            text-align: right;
+            color:#fff;
+            position: relative; top:200px; right: 50px;
+        }
+        main .test_drive h2 {
+            font-size: 3.2rem;
+            line-height: 80px;
+            font-family: NanumMyeongjo;
+            font-weight: 800;
+        }
+        main .test_drive p {
+            font-size: 1.25rem;
+            line-height: 35px;
+            margin:80px 0 100px;
+        }
+        main .test_drive a {
+            font-size: 1.25rem;
+            color:#fff;
+            padding: 10px 20px;
+            border:2px solid #fff;
+            border-radius: 50px;
+        }
+        main .test_drive a:hover {
+            background-color: #fff; color:#000;
+            font-weight: 700;
+        }
+        main .test_drive a i {margin-left: 10px;}
+    </style>
 </head>
 <body>
     <!-- <?php include('./header.php') ?> -->
@@ -105,44 +148,18 @@
         </div>
     </header>
     <main>
-        <div class="contents">
-            <h2>MINI 전시장</h2>
-            <div class="list">
-                <a href="#" class="active">코오롱모터스 MINI 서초전시장</a>
-                <a href="#">코오롱모터스 MINI 삼성전시장</a>
-                <a href="#">바바리안 모터스 MINI 계양전시장</a>
-            </div>
-            <div id="map"><!-- 지도삽입위치 --></div>
-            <div class="infor in1">
-                <p class="location"><img src="./images/shop_location.png" alt=""><span> 서울 서초구 반포대로 79</span></p>
-                <p class="number"><img src="./images/shop_num.png" alt=""><span> 02-2146-8900</span></p>
-                <p class="content"><img src="./images/shop_per.png" alt="">
-                    <span>안녕하세요. MINI 서울 플래그십 스토어, MINI 서초전시장입니다.<br>
-                    최대 25대의 MINI가 전시중인, 실내에서 가장 많은 차량을 만나보실 수 있는 MINI 서초전시장으로 여려분을 초대합니다.<br>
-                    <br>
-                    ※ MINI JCW Zone을 보유한, JCW를 직접 만나보실 수 있는 전시장<br>
-                    ※ MINI FULL 라인업의 관람 & 시승이 가능한 전시장</span>
-                </p>
-            </div>
-            <div class="infor in2">
-                <p class="location"><img src="./images/shop_location.png" alt=""><span> 서울 강남구 영동대로 301</span></p>
-                <p class="number"><img src="./images/shop_num.png" alt=""><span> 02-2191-7400</span></p>
-                <p class="content"><img src="./images/shop_per.png" alt="">
-                    <span>안녕하세요. 서울 최대 규모의 수입차 전시장에 위치하고 있는 MINI  공식 딜러 코오롱모터스 MINI 삼성전시장입니다.<br>
-                        MINI에 대한 모든 것을 설명해드리는 MINI GENIUS부터<br>
-                        넓은 주차 공간, 전문적인 세일즈 컨설턴트까지.<br>
-                        MINI 구입에 있어 필요한 모든 것들이 준비되어 있는 전시장으로 고객 여러분을 초대합니다.</span>
-                </p>
-            </div>
-            <div class="infor in3">
-                <p class="location"><img src="./images/shop_location.png" alt=""><span> 인천 계양구 서운산단로2길 6 </span></p>
-                <p class="number"><img src="./images/shop_num.png" alt=""><span> 032-713-4601</span></p>
-                <p class="content"><img src="./images/shop_per.png" alt="">
-                    <span>안녕하세요. MINI 공식 딜러 바바리안 모터스입니다.<br>
-                        계양 전시장은 MINI는 물론 BMW 전시장, 서비스 센터까지 갖춘 통합 센터이며 1층 MINI 전시장에는<br>
-                        국내 최초 MINI 전시장 내 스타벅스가 입점해 있습니다.<br></span>
-                </p>
-            </div>
+        <div class="test_drive">
+            <h2>
+                MINI JCW가<br>
+                전국의 MINI 팬<br>여러분에게<br>
+                달려갑니다.
+            </h2>
+            <p>
+                MINI JCW가 전국의 MINI 팬 여러분에게 달려갑니다.<br>
+                지금 시승 신청하고 JCW의 강렬하고 묵직한 파워와 함께<br>
+                당신 안의 레이싱 본능을 깨워보세요.
+            </p>
+            <a href="#">신청하러 가기<i class="fa-solid fa-chevron-right"></i></a>
         </div>
     </main>
     <footer>
@@ -170,35 +187,6 @@
         </div>
     </footer>
     <script src="./script/common.js"></script>
-    <script src="./script/index.js"></script>
-    <!-- 카카오 지도를 사용하기 위한 js 앱키 준비 -->
-    <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d892061c97b33004cd758ddf658d5a1b"></script> -->
-    <script>
-/*         var markerPosition  = new kakao.maps.LatLng(37.4873323,127.0095449);
-        const container = document.getElementById('map'); //지도를 담을 영역의 DOM 레퍼런스
-        let options = { //지도를 생성할 때 필요한 기본 옵션
-	    center: new kakao.maps.LatLng(37.4873323,127.0095449), //지도의 중심좌표.
-	    level: 3 //지도의 레벨(확대, 축소 정도)
-        };
-        let map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
-        var marker = new kakao.maps.Marker({
-	        position: markerPosition
-        });
-        marker.setMap(map); */
-        /* 내용 */
-        const list = document.querySelectorAll('.contents .list a')
-        const content = document.querySelectorAll('.infor')
-        for(let i of content){i.style.display='none'}
-        content[0].style.display='block'
-        list.forEach(function(t,i){
-            t.addEventListener('click',function(e){
-                e.preventDefault()
-                for(let i of list){i.classList.remove('active')}
-                t.classList.add('active')
-                for(let i of content){i.style.display='none'}
-                content[i].style.display = 'block'
-            })
-        })
-    </script>
+    <!-- <script src="./script/index.js"></script> -->
 </body>
 </html>
