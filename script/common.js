@@ -20,5 +20,5 @@ for(let i of nav){
 const m_nav = document.querySelector('.m_nav')
 const m_nav_open = document.querySelector('.m_nav_open')
 m_nav.addEventListener('click',function(){
-m_nav_open.classList.toggle('showHide')
+    m_nav_open.classList.toggle('showHide')
 })

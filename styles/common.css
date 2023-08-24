@@ -21,7 +21,7 @@ header nav .gnb > li {
 }
 header nav .gnb > li > a {
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.25rem;
     color:#fff;
     margin-right: 50px;
@@ -111,11 +111,6 @@ header nav .m_nav_open {
     position: absolute; top: 100px;
     z-index: 40;
 }
-header nav .m_nav_open .close {
-    position: absolute; top:10px; right: 10px;
-    z-index: 50;
-}
-header nav .m_nav_open .close img {}
 header nav .m_nav_open ul {}
 header nav .m_nav_open > ul > li {
     position: relative;
@@ -132,7 +127,7 @@ header nav .m_nav_open ul li a {}
 header nav .m_nav_open ul li a span {
     display: inline-block;
     font-family: 'Playfair Display', serif;
-    font-weight: 700;
+    font-weight: 500;
     color:#fff;
     padding:20px 30px;
 }
@@ -147,3 +142,34 @@ header nav .m_nav_open ul li ul li a {
     display: inline-block;
     padding: 10px 30px;
 }
+footer {
+    margin:100px 50px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: space-between;
+}
+footer .left {display: flex;}
+footer .left h1 {width: 200px; margin-right: 150px;}
+footer .left h1 img {width: 100%;}
+footer .left .footer_menu {}
+footer .left .footer_menu ul {
+    display: flex; flex-flow: row nowrap;
+    margin-bottom: 26px;
+}
+footer .left .footer_menu ul li {}
+footer .left .footer_menu ul li::after {
+    content: '';
+    display: inline-block;
+    background-color: #000;
+    width: 1px; height: 14px;
+    margin:0 20px;
+}
+footer .left .footer_menu ul li span {font-weight: 700;}
+footer .left .footer_menu address {
+    line-height: 30px;
+}
+footer .sns {
+    text-align: right;
+}
+footer .sns a {width: 40px;}
+footer .sns a:nth-child(2) {margin:0 50px;}
+footer .sns a img {}
