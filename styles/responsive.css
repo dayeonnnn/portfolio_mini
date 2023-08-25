@@ -66,6 +66,12 @@
     .make .make_car img {
         width:500px;
     }
+    .search_bg .search {
+        display: flex; flex-flow: column nowrap;
+        align-items: center;
+        position: relative; top:200px;
+    }
+    .search_bg .search #store_search_frm {margin-bottom: 50px;}
 }
 @media screen and (max-width:800px){
     main #map {
@@ -85,4 +91,7 @@
     footer .left .footer_menu ul li::after {display: none;}
     .deg .deg_360 a .bg {height: 500px;}
     .deg .deg_360 a .icon {width: 100px;}
+}
+@media screen and (max-width:650px) {
+    main .list {width: 400px;}
 }

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="미니, MINI, 자동차">
+    <meta name="description" content="MINI 공식 사이트입니다.">
+    <title>MINI | Store</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;800;900&display=swap" rel="stylesheet">
+    <!-- 스와이퍼 -->
+<!--     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script> -->
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <link rel="stylesheet" href="./styles/common.css">
+    <link rel="stylesheet" href="./styles/store.css">
+    <!-- <link rel="stylesheet" href="./styles/shop_map.css"> -->
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- 폰트어썸 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <?php include('./header.php') ?>
+    <main>
+        <div class="search_bg">
+            <div class="search">
+                <form action="#" method="post" id="store_search_frm">
+                    <fieldset>
+                        <legend class="skip">검색양식</legend>
+                        <input type="search" name="search" id="s_search" placeholder="국가/지역, 도시, 매장 ..." autofocus>
+                        <button type="submit" id="s_searchBtn"><img src="./images/search.png" alt="검색"></button>
+                    </fieldset>
+                </form>
+                <a href="#" class="now"><img src="./images/shop_location.png" alt="위치"><span>현재 위치 사용하기</span></a>
+            </div>
+        </div>
+        <div class="list">
+            <div class="list_title">
+                <h2>MINI 매장</h2>
+                <a href="#"><span>더 보기</span><i class="fa-regular fa-square-plus"></i></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">
+                        <h3>도이치모터스 MINI 용산전시장</h3>
+                        <p>서울 용산구 원효로 134<br>원효로3가 56-4</p>
+                        <p>0507-1363-3408</p>
+                        <p class="a">매장 방문 예약하기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>코오롱모터스 MINI 서초전시장</h3>
+                        <p>서울 서초구 반포대로 79<br>서초동 1537-1</p>
+                        <p>02-2146-8900</p>
+                        <p class="a">매장 방문 예약하기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>도이치모터스 MINI 강남전시장</h3>
+                        <p>서울 강남구 언주로 846 1층<br>신사동 634-5</p>
+                        <p>02-549-3400</p>
+                        <p class="a">매장 방문 예약하기</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>도이치모터스 MINI 성수전시장</h3>
+                        <p>서울 성동구 동일로 111<br>성수동2가 19-24</p>
+                        <p>02-2170-7200</p>
+                        <p class="a">매장 방문 예약하기</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    <?php include('./footer.php') ?>
+    <script src="./script/common.js"></script>
+    <!-- <script src="./script/index.js"></script> -->
+</body>
+</html>

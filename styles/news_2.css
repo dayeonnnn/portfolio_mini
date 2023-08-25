@@ -1,0 +1,88 @@
+main {
+    position: relative; top:100px;
+}
+main .benefit_title {
+    padding:100px 50px;
+}
+main .benefit_title h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-family: NanumMyeongjo;
+    margin-bottom: 50px;
+}
+main .benefit_title p {
+    font-size: 1.25rem;
+}
+main .benefit_list {}
+main .benefit_list ul {margin-bottom: 200px;}
+main .benefit_list ul li:nth-child(2n) {
+    background-color: #eee;
+}
+main .benefit_list ul li:last-child {
+    border-bottom: 1px solid #aaa;
+}
+main .benefit_list ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:70px;
+    border-top: 1px solid #aaa;
+}
+main .benefit_list ul li .list_title {
+    width: 200px;
+}
+main .benefit_list ul li .list_title h3 {
+    font-size: 1.563rem;
+    font-weight: 700;
+}
+main .benefit_list ul li .list_title p {
+    line-height: 23px;
+}
+main .benefit_list ul li .list_title p:nth-child(2) {margin:30px 0;}
+main .benefit_list ul li .list_title p em {
+    font-size: 1.563rem;
+    font-weight: 700;
+}
+main .benefit_list ul li .list_img {
+    width: 400px; height: 181px;
+}
+main .benefit_list ul li .list_img img {width: 100%;}
+main .benefit_list ul li .program {}
+main .benefit_list ul li .program p {
+    line-height: 23px;
+    margin-bottom: 30px;
+}
+main .benefit_list ul li .program p span {
+    font-weight: 700;
+}
+main .benefit_list ul li .price {}
+main .benefit_list ul li .price p {
+    margin-bottom: 30px;
+    line-height: 23px;
+}
+main .benefit_list ul li .price p em {
+    font-size: 1.563rem;
+    font-weight: 700;
+}
+main ul li > a {
+    display: flex; flex-flow: row nowrap;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+main ul li > a span {
+    width: 15px; height: 15px;
+    background: url(../images/right_b.png) no-repeat;
+    background-size: cover;
+    position: relative; top:1px;
+}
+main ul li > a:hover {
+    background-color: #000;
+    color:#fff;
+}
+main ul li > a:hover span {
+    background: url(../images/right.png) no-repeat;
+    background-size: cover;
+    position: relative; top:1px;
+}

@@ -1,5 +1,7 @@
 /* main */
-main {}
+main {
+    min-width: 800px;
+}
 main .visual {
     position:relative;
     overflow: hidden;
@@ -69,6 +71,7 @@ main .model h2,main .mini h2 {
 main .model #model_slide {}
 main .model #model_slide .swiper-wrapper {}
 main .model #model_slide .swiper-wrapper .swiper-slide {width: 500px; height: 300px;}
+main .model #model_slide .swiper-wrapper a {display: block; width: 500px; height: 300px;}
 main .model #model_slide .swiper-wrapper .swiper-slide .txt {
     position: absolute; bottom: 7%; left:50%; transform: translateX(-50%);
     opacity: 0;

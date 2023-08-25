@@ -29,16 +29,23 @@ main .list a::after {
     margin:0 20px;
 }
 main .list a:last-child::after {display: none;}
-main #map {
+main #map1 {
     background-color:#aaa;
     width: 1000px; height: 500px;
-
+}
+main #map2 {
+    background-color:#aaa;
+    width: 1000px; height: 500px;
+}
+main #map3 {
+    background-color:#aaa;
+    width: 1000px; height: 500px;
 }
 main .infor {
-    margin-top: 50px;
+
 }
 main .infor p {
-    margin-bottom: 20px;
+    margin: 50px 0 20px;
 }
 main .infor p span {
     font-size: 1.25rem;

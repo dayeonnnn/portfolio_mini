@@ -68,6 +68,7 @@ header .header_r {
 }
 header .header_r #search_frm {margin-right: 20px;}
 header .header_r #search_frm fieldset {
+    width: 350px;
     background: rgba(255,255,255,0.6);
     border-radius: 5px;
     padding: 5px 10px;
@@ -78,6 +79,7 @@ header .header_r #search_frm fieldset {
 }
 header .header_r #search_frm fieldset #search {
     background: none;
+    width: 90%;
 }
 header .header_r #search_frm fieldset #search::placeholder {
     color:#000;

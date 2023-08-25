@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="미니, MINI, 자동차">
+    <meta name="description" content="MINI 공식 사이트입니다.">
+    <title>MINI | 뉴스레터</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;800;900&display=swap" rel="stylesheet">
+    <!-- 스와이퍼 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <!-- <link rel="stylesheet" href="./styles/index.css"> -->
+    <link rel="stylesheet" href="./styles/common.css">
+    <!-- <link rel="stylesheet" href="./styles/shop_map.css"> -->
+    <link rel="stylesheet" href="./styles/responsive.css">
+    <!-- 폰트어썸 -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> -->
+    <style>
+        @media screen and (max-width:1475px){
+            main ul {
+                width: 1000px !important;
+            }
+        }
+        @media screen and (max-width:1050px) {
+            main ul {
+                width: 500px !important;
+            }
+        }
+        main {
+            position: relative; top:100px;
+            padding: 100px 50px 0;
+            margin-bottom: 300px;
+        }
+        main h2 {
+            font-size: 2rem;
+            font-weight: 800;
+            font-family: 'Playfair Display', serif;
+        }
+        main h3 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            font-family: 'Playfair Display', serif;
+            margin: 40px 0;
+        }
+        main > p {
+            line-height: 23px;
+            margin-bottom: 100px;
+        }
+        main ul {
+            margin: 0 auto;
+            width: 1400px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+        main ul li {
+            /* width: calc(33% - 50px / 3) ; */
+            margin: 0 auto;
+            width: 450px;
+            transition: all 0.3s;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        /* main ul li:nth-child(2),main ul li:nth-child(5) {margin:0 25px;} */
+        main ul li:nth-child(1),main ul li:nth-child(2),main ul li:nth-child(3) { margin-bottom: 30px;}
+        main ul li a {}
+        main ul li a .bg {
+            height: 400px;
+            transition: all 0.3s;
+        }
+        main ul li a .txt {
+            white-space: nowrap;
+            height: 160px;
+            font-size: 1.563rem;
+            line-height: 40px;
+            font-family: NanumMyeongjo;
+            font-weight: 700;
+            padding: 20px;
+            display: flex; flex-flow: column nowrap;
+            justify-content: center;
+        }
+        main ul li a .bg_1 {
+            background: url(./images/new_6.png) no-repeat;
+            background-size: auto 110%;
+            background-position: center;
+        }
+        main ul li a .bg_2 {
+            background: url(./images/new_5.png) no-repeat;
+            background-size: auto 110%;
+            background-position: center;
+        }
+        main ul li a .bg_3 {
+            background: url(./images/new_4.png) no-repeat;
+            background-size: auto 110%;
+            background-position: center;
+        }
+        main ul li a .bg_4 {
+            background: url(./images/new_3.jpg) no-repeat;
+            background-size: auto 110%;
+            background-position: center;
+        }
+        main ul li a .bg_5 {
+            background: url(./images/new_2.jpg) no-repeat;
+            background-size: auto 110%;
+            background-position: center;
+        }
+        main ul li a .bg_6 {
+            background: url(./images/new_1.jpg) no-repeat;
+            background-size: auto 110%;
+            background-position: center;
+        }
+        main ul li:hover {box-shadow: 0 0 10px rgba(0,0,0,0.5);}
+        main ul li:hover .bg {background-size: auto 120%;}
+    </style>
+</head>
+<body>
+    <?php include('./header.php') ?>
+    <main>
+        <h2>News</h2>
+        <h3>EXPLORE THE WORLD OF MINI.</h3>
+        <p>
+            MINI는 최대한의 경험과 최소한의 설치로 사람들의 삶에 활력을 불어 넣습니다.<br>
+            작은 사이즈와 상징적인 디자인을 가지고 1959년에 처음 탄생한 미니는 미니만의 스릴을 선사했습니다.<br>
+            오늘날 MINI는 도시 생활 전반에 걸쳐 이러한 아이디어를 적용하고 있습니다.
+        </p>
+        <ul>
+            <li>
+                <a href="#">
+                    <p class="bg bg_1"></p>
+                    <p class="txt">새롭게 돌아온 MINI<br>CLUBMAN UNTOLD<br>EDITION.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="bg bg_2"></p>
+                    <p class="txt">MINI HOMECOMING<br>WEEK 2023.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="bg bg_3"></p>
+                    <p class="txt">2023 국제 MINI 모임.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="bg bg_4"></p>
+                    <p class="txt">작은 도시를 사랑하자,<br>MINI 웜플레이스.</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="bg bg_5"></p>
+                    <p class="txt">MINI X ESSENTIAL;</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p class="bg bg_6"></p>
+                    <p class="txt">The MINI ACV 30.</p>
+                </a>
+            </li>
+        </ul>
+    </main>
+    <?php include('./footer.php') ?>
+    <script src="./script/common.js"></script>
+    <!-- <script src="./script/index.js"></script> -->
+</body>
+</html>
