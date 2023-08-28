@@ -33,14 +33,6 @@ main #map1 {
     background-color:#aaa;
     width: 1000px; height: 500px;
 }
-main #map2 {
-    background-color:#aaa;
-    width: 1000px; height: 500px;
-}
-main #map3 {
-    background-color:#aaa;
-    width: 1000px; height: 500px;
-}
 main .infor {
 
 }
@@ -69,5 +61,3 @@ main .infor .content span {
     display: inline-block;
 }
 main .contents .in1 {}
-/* main .contents .in2 {display: none;}
-main .contents .in3 {display: none;} */
