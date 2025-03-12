@@ -1,4 +1,4 @@
-<footer>
+var mainfooter = `
         <div class="left">
             <h1><img src="./images/mini_logo_b.png" alt=""></h1>
             <div class="footer_menu">
@@ -21,4 +21,5 @@
             <a href="https://www.facebook.com/MINIKOREA.kr"><img src="./images/Facebook.png" alt="Facebook"></a>
             <a href="https://www.youtube.com/channel/UCYT6053wcW3_VRWW7N5gptg"><img src="./images/Youtube.png" alt="Youtube"></a>
         </div>
-    </footer>
+`
+document.write(mainfooter);

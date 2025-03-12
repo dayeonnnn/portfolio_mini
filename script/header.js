@@ -1,4 +1,4 @@
-<header>
+var mainheader = `
         <nav>
             <ul class="gnb">
                 <li><a href="#">Model</a>
@@ -77,4 +77,5 @@
             </form>
             <a href="#"><img src="./images/login.png" alt="login"></a>
         </div>
-    </header>
+`;
+document.write(mainheader);

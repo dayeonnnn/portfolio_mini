@@ -33,7 +33,6 @@ header nav .gnb > li > .sub {
     position: absolute; top:100px;
     width: 100%;
     height: 300px;
-    /* background:#fff ; */
     z-index: 990;
 }
 header nav .gnb > li > .sub li {
@@ -50,7 +49,7 @@ header nav .gnb > li > .sub li a {
     color: #000;
 }
 header nav .nav_bg {
-    background: rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.8);
     height: 300px; width: calc(100% - 100px);
     position: absolute;  top:100px;
     z-index: 600;
